@@ -1,0 +1,110 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+.header{
+    width: 100%;
+    height: 40vh;
+    background-image:linear-gradient(to right,black, transparent), url('./assets/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center_elements{
+    width: 47%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center_elements input{
+    width: 100%;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    padding: 0 25px 0 35px;
+}
+
+.center_elements i, select{
+    position: absolute;
+    z-index: 99;
+}
+
+i{
+    left: 2%;
+    opacity: .7;
+}
+
+select{
+    right: 2%;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.genrateBtn{
+    height: 45px;
+    padding: 0 35px;
+    text-transform: capitalize;
+    border-radius: 40px;
+    margin-left: 17px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(30deg, rgb(248, 166, 166), rgb(141, 141, 253));
+    color: #fff;
+}
+
+.img_container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    color: #000;
+}
+
+.img_container .card_img{
+    width: 250px;
+    height: 200px;
+    position: relative;
+}
+
+.card_img img{
+border-radius: 4px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.dwnBtn{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 13px;
+    z-index: 99;
+    color: #fff;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
