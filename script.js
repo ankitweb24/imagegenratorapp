@@ -6,7 +6,7 @@ let error = document.querySelector(".error");
 
 let img_container = document.querySelector(".img_container");
 const genrateImage = async (userValue, imgQuantity) => {
-  let apiLink = `https://pixabay.com/api/?key=22585776-458ea861ffd65b4334cb5cef7&q=${userValue}&image_type=photo`;
+  let apiLink = `https://pixabay.com/api/?key=ENTER_YOUR_API_KEY&q=${userValue}&image_type=photo`;
 
   const response = await fetch(apiLink);
 
